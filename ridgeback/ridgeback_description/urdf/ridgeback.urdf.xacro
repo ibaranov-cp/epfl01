@@ -21,8 +21,7 @@
   <material name="yellow"><color rgba="0.8 0.8 0.0 1.0" /></material>
   <material name="black"><color rgba="0.15 0.15 0.15 1.0" /></material>
  
-  <xacro:include filename="$(find ur_description)/urdf/ur10.urdf.xacro" />
-  <xacro:include filename="$(find robotiq_s_model_visualization)/cfg/s-model_articulated_macro.xacro" />
+  <xacro:include filename="$(find ur_description)/urdf/ur5.urdf.xacro" />
 
 
   <xacro:macro name="wheel" params="prefix side *joint_pose">
