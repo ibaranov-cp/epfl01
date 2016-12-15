@@ -152,7 +152,7 @@ INT_8 rq_sensor_com()
 		return -1;
 	}
 
-        device_found = rq_com_identify_device("ttyUSB0");
+        device_found = rq_com_identify_device("ftdi_DABD4DF");
 
 	closedir(dir);
 
