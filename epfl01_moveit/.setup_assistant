@@ -5,4 +5,4 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/ridgeback.srdf
   CONFIG:
-    generated_timestamp: 1481821576
+    generated_timestamp: 1481823554
