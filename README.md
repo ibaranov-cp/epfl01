@@ -12,6 +12,7 @@ sudo apt-get install ros-indigo-moveit-planners* -y
 sudo apt-get install ros-indigo-moveit-ros-planning* -y
 sudo apt-get install ros-indigo-moveit-ros-move-group -y
 sudo apt-get install ros-indigo-moveit-ros-control-interface -y
+sudo apt-get install ros-indigo-moveit-ros-manipulation -y
 ```
 
 On the system with a user interface (either the robot or laptop, user computer, etc) you will also need to install:

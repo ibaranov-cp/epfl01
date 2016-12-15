@@ -1,3 +1,4 @@
+
 <launch>
   <!-- imu -->
   <node pkg="microstrain_3dmgx2_imu" type="imu_node" name="microstrain_imu">
@@ -11,8 +12,7 @@
     <remap from="imu/data" to="microstrain/data"/>
   </node>
 
+  <node pkg="tf" type="static_transform_publisher" name="microstrain_static" args="-0.22 0.0 0.76 1.5708 3.1416 0.0 arch_link microstrain_link 100" />
 
-  <node pkg="tf" type="static_transform_publisher" name="microstrain_static" args="0.0 0.0 1.0 3.1416 3.1416 0.0 arch_link microstrain_link 100" />
 
 </launch>
-
