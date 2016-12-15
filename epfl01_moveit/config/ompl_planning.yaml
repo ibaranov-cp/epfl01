@@ -65,3 +65,5 @@ UR5:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
+  projection_evaluator: joints(ur5_arm_shoulder_lift_joint,ur5_arm_elbow_joint)
+  longest_valid_segment_fraction: 0.05
