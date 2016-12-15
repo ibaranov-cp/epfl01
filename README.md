@@ -1,7 +1,7 @@
 # EPFL01
 Code for EPFL01 moveit and urdf code
 
-For Husky instructions and tutorials, please see http://wiki.ros.org/Robots/Ridgeback
+For Ridgeback instructions and tutorials, please see http://wiki.ros.org/Robots/Ridgeback
 
 For this installation, local (user laptop for example) pre-requisites can be installed with:
 ```
@@ -21,7 +21,7 @@ sudo apt-get install ros-indigo-moveit-visual-tools
 sudo apt-get install ros-indigo-moveit-ros-visualization
 ```
 
-To launch the planner on a local laptop, ensure ROS_IP (your machine IP) and the computer's IP (Husky IP) are exported properly (you may have to edit your /etc/hosts file):
+To launch the planner on a local laptop, ensure ROS_IP (your machine IP) and the computer's IP (Ridgeback IP) are exported properly (you may have to edit your /etc/hosts file):
 ```
 export ROS_IP=192.168.131.X
 export ROS_MASTER_URI=http://CPR-EPFL01:11311
