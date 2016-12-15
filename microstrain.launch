@@ -1,0 +1,18 @@
+<launch>
+  <!-- imu -->
+  <node pkg="microstrain_3dmgx2_imu" type="imu_node" name="microstrain_imu">
+    <param name="time_offset" value="-0.040" />
+    <param name="port" type="string" value="/dev/microstrain" />
+    <param name="autostart" type="bool" value="true" />
+    <param name="frame_id" type="string" value="microstrain_link" />
+    <param name="autocalibrate" type="bool" value="true" />
+    <param name="angular_velocity_stdev" type="double" value="0.00017" />
+    <param name="max_drift_rate" value="0.0005" />
+    <remap from="imu/data" to="microstrain/data"/>
+  </node>
+
+
+  <node pkg="tf" type="static_transform_publisher" name="microstrain_static" args="0.0 0.0 1.0 3.1416 3.1416 0.0 arch_link microstrain_link 100" />
+
+</launch>
+
